@@ -11,11 +11,11 @@ typedef USART_TypeDef usart_t;
 #define USB_TX_GPIO_PORT_NUM  GPIOA
 #define USB_TX_GPIO_BIT_NUM   GPIO_Pin_2
 
-#define DEBUG_USART     USART1
-#define DEBUG_RX_GPIO_PORT_NUM  GPIOA
-#define DUBUG_RX_GPIO_BIT_NUM   GPIO_Pin_10
-#define DEBUG_TX_GPIO_PORT_NUM  GPIOA
-#define DUBUG_TX_GPIO_BIT_NUM   GPIO_Pin_9
+#define DEBUG_USART     USART3
+#define DEBUG_RX_GPIO_PORT_NUM  GPIOB
+#define DUBUG_RX_GPIO_BIT_NUM   GPIO_Pin_11
+#define DEBUG_TX_GPIO_PORT_NUM  GPIOB
+#define DUBUG_TX_GPIO_BIT_NUM   GPIO_Pin_10
 
 extern void debug_usart_init( uint32_t boundrate );
 extern void usart_putchar( usart_t *usart_num, char ch );
